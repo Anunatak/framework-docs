@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Anunatak\Framework\ListTable | AnunaFramework API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Anunatak_Framework_ListTable" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">AnunaFramework API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Anunatak.html">Anunatak</a></li>
+                                        <li><a href="../../Anunatak/Framework.html">Framework</a></li>
+    
+                <li>ListTable</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>ListTable</h1>
+    </div>
+
+    <p>    class
+    <strong>ListTable</strong>        extends <abbr title="WP_List_Table">WP_List_Table</abbr>
+</p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Set the variables and start everything up</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_initiate">initiate</a>($model, 
+    array $options, 
+    array $columns, 
+    array $sortable_columns, $slug)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_data">get_data</a>(
+    string $orderby = &#039;id&#039;, 
+    string $order = &#039;desc&#039;, 
+    integer $per_page = 5, 
+    integer $page = 1)
+                                            <p>Get the current model</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete_item">delete_item</a>(
+    integer $id)
+                                            <p>Delete an item</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_search">set_search</a>()
+                                            <p>Set the search parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_order">set_order</a>()
+                                            <p>Set the order parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set_orderby">set_orderby</a>()
+                                            <p>Set the orderby parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ajax_user_can">ajax_user_can</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_no_items">no_items</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_views">get_views</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_columns">get_columns</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_sortable_columns">get_sortable_columns</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepare_items">prepare_items</a>()
+                                            <p>Prepare data for display</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_column_default">column_default</a>(
+    <abbr title="Anunatak\Framework\Anunatak\AnunaFramework\Models\Model">Model</abbr> $item, 
+    string $column_name)
+                                            <p>Render a column when no column specific method exist.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_column_cb">column_cb</a>(
+    <abbr title="Anunatak\Framework\Anunatak\AnunaFramework\Models\Model">Model</abbr> $item)
+                                            <p>Render the bulk edit checkbox</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_column_name">column_name</a>(
+    array $item)
+                                            <p>Method for the name column</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_display_tablenav">display_tablenav</a>($which)
+                                            <p>Override of table nav to avoid breaking with bulk actions &amp; according nonce field</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extra_tablenav">extra_tablenav</a>($which)
+                                            <p>Disables the views for 'side' context as there's not enough free space in the UI
+Only displays them on screen/browser refresh. Else we'd have to do this via an AJAX DB update.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_bulk_actions">get_bulk_actions</a>()
+                                            <p>Returns an associative array containing the bulk action</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process_bulk_action">process_bulk_action</a>()
+                                            <p>Process the bulk action</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 78</div>
+        <code>                    
+    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the variables and start everything up</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initiate">
+        <div class="location">at line 83</div>
+        <code>                    
+    
+    <strong>initiate</strong>($model, 
+    array $options, 
+    array $columns, 
+    array $sortable_columns, $slug)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$columns</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$sortable_columns</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$slug</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_data">
+        <div class="location">at line 114</div>
+        <code>        static            
+    array
+    <strong>get_data</strong>(
+    string $orderby = &#039;id&#039;, 
+    string $order = &#039;desc&#039;, 
+    integer $per_page = 5, 
+    integer $page = 1)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the current model</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$orderby</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$order</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    integer</td>
+                <td>$per_page</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    integer</td>
+                <td>$page</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete_item">
+        <div class="location">at line 133</div>
+        <code>        static            
+    boolean
+    <strong>delete_item</strong>(
+    integer $id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Delete an item</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    integer</td>
+                <td>$id</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_search">
+        <div class="location">at line 141</div>
+        <code>                    
+    
+    <strong>set_search</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the search parameter</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_order">
+        <div class="location">at line 152</div>
+        <code>                    
+    
+    <strong>set_order</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the order parameter</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set_orderby">
+        <div class="location">at line 163</div>
+        <code>                    
+    
+    <strong>set_orderby</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the orderby parameter</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ajax_user_can">
+        <div class="location">at line 174</div>
+        <code>                    
+    
+    <strong>ajax_user_can</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::ajax_user_can()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_no_items">
+        <div class="location">at line 182</div>
+        <code>                    
+    
+    <strong>no_items</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::no_items()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_views">
+        <div class="location">at line 190</div>
+        <code>                    
+    
+    <strong>get_views</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::get_views()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_columns">
+        <div class="location">at line 198</div>
+        <code>                    
+    
+    <strong>get_columns</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::get_columns()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_sortable_columns">
+        <div class="location">at line 206</div>
+        <code>                    
+    
+    <strong>get_sortable_columns</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::get_sortable_columns()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepare_items">
+        <div class="location">at line 215</div>
+        <code>                    
+    
+    <strong>prepare_items</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Prepare data for display</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::prepare_items()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_column_default">
+        <div class="location">at line 255</div>
+        <code>                    
+    mixed
+    <strong>column_default</strong>(
+    <abbr title="Anunatak\Framework\Anunatak\AnunaFramework\Models\Model">Model</abbr> $item, 
+    string $column_name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Render a column when no column specific method exist.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Anunatak\Framework\Anunatak\AnunaFramework\Models\Model">Model</abbr></td>
+                <td>$item</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$column_name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_column_cb">
+        <div class="location">at line 266</div>
+        <code>                    
+    string
+    <strong>column_cb</strong>(
+    <abbr title="Anunatak\Framework\Anunatak\AnunaFramework\Models\Model">Model</abbr> $item)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Render the bulk edit checkbox</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Anunatak\Framework\Anunatak\AnunaFramework\Models\Model">Model</abbr></td>
+                <td>$item</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_column_name">
+        <div class="location">at line 279</div>
+        <code>                    
+    string
+    <strong>column_name</strong>(
+    array $item)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Method for the name column</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$item</td>
+                <td>an array of DB data</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_display_tablenav">
+        <div class="location">at line 295</div>
+        <code>                    
+    
+    <strong>display_tablenav</strong>($which)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Override of table nav to avoid breaking with bulk actions &amp; according nonce field</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$which</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extra_tablenav">
+        <div class="location">at line 318</div>
+        <code>                    
+    
+    <strong>extra_tablenav</strong>($which)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Disables the views for 'side' context as there's not enough free space in the UI
+Only displays them on screen/browser refresh. Else we'd have to do this via an AJAX DB update.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$which</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>WP_List_Table::extra_tablenav()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_bulk_actions">
+        <div class="location">at line 333</div>
+        <code>                    
+    array
+    <strong>get_bulk_actions</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns an associative array containing the bulk action</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process_bulk_action">
+        <div class="location">at line 345</div>
+        <code>                    
+    void
+    <strong>process_bulk_action</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Process the bulk action</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
